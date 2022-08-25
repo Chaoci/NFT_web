@@ -12,7 +12,7 @@
           box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  border-color: currentColor; /* 2 */
 }
 
 ::before,
@@ -572,6 +572,27 @@ select {
   outline: 1px solid ButtonText;
   outline: 1px auto -webkit-focus-ring-color;
 }
+    html{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    
+    img{
+        vertical-align:middle;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    html, body{
+        margin: 0 auto;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    
+    *,*::after,*::before{
+        /* outline:auto; */
+    }
 
 *, ::before, ::after {
   --tw-translate-x: 0;
@@ -617,8 +638,94 @@ select {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+@media (min-width: 1440px) {
+
+  .container {
+    max-width: 1440px;
+  }
+}
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .contents {
   display: contents;
+}
+.h-full {
+  height: 100%;
+}
+.w-\[42\%\] {
+  width: 42%;
+}
+.w-\[30\%\] {
+  width: 30%;
+}
+.w-1\/6 {
+  width: 16.666667%;
+}
+.w-5\/6 {
+  width: 83.333333%;
+}
+.w-\[28\%\] {
+  width: 28%;
+}
+.w-full {
+  width: 100%;
+}
+.flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.border {
+  border-width: 1px;
+}
+.border-r {
+  border-right-width: 1px;
+}
+.border-none {
+  border-style: none;
+}
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.pl-12 {
+  padding-left: 3rem;
+}
+.pr-\[72px\] {
+  padding-right: 72px;
 }
 .text-3xl {
   font-size: 1.875rem;
