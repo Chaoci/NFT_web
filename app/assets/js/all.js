@@ -1,5 +1,1 @@
-console.log('Hello!');
-
-$(document).ready(() => {
-  console.log('HesSchool Hello!');
-});
+const menu = document.querySelector('.header-mobile-menu');

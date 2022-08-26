@@ -1,0 +1,32 @@
+.header-mobile-close{
+    display:none;
+}
+/* input{
+    outline: none;
+} */
+
+/* .more-area{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 18px;
+    line-height: 19px;
+} */
+
+/* .more-btn{
+    position:relative;
+} */
+/* .more-btn::before{
+    position:absolute;
+    content:"";
+    border:8px solid #E6553B;
+    border-top: 8px solid transparent;
+    border-left:8px solid transparent;
+    bottom:0;
+    right:0;
+} */
+/* .more-btn:hover::before{
+    border:8px solid #000000;
+    border-top: 8px solid transparent;
+    border-left:8px solid transparent;
+} */

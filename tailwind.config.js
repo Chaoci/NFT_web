@@ -1,6 +1,11 @@
+const plugin = require('@tailwindcss/forms')
+
 module.exports = {
   content: ["./app/**/*.{html,ejs}"],
   theme: {
+    fontFamily:{
+      'squada': ['Squada One', 'cursive','Noto Sans TC', 'sans-serif']
+    },
     container:{
       center:true,
       padding:'12px',
@@ -17,14 +22,29 @@ module.exports = {
       '6': '6px',
       '8': '8px',
     },
-    colors:{
+    extend: {
+      colors:{
       'main-bg':'#F0F0F0',
       'main-orange':'#E6553B'
     },
-    extend: {},
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
+    // plugin(function({ addUtilities, addComponents, e, prefix, config }) {
+    //   const newUtilities = {
+    //     '.horizontal-tb': {
+    //       writingMode: 'horizontal-tb',
+    //     },
+    //     '.vertical-rl': {
+    //       writingMode: 'vertical-rl'
+    //     },
+    //     '.vertical-lr': {
+    //       writingMode: 'vertical-lr'
+    //     }
+    //   }
+    //   addUtilities(newUtilities)
+    // })
   ],
 }
