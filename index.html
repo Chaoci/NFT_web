@@ -7,16 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首頁</title>
   <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/style/some.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Squada+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-main-bg relative">
   <header class="header z-30 border-b border-black md:border lg:border-black lg:border-r-0 lg:border-l-0 sticky top-0 bg-main-bg">
-    <div class="container lg:px-0">
+    <div class="container lg:px-[72px]">
       <div class="header-content flex">
         <div class="header-logo md:w-[42%] py-4 md:py-8 lg:border-r lg:border-black">
           <a href="index.html"><img src="./assets/images/week8-202207/logo.svg" alt="logo" class="w-[85px] h-[18px] md:w-auto md:h-auto"></a>
@@ -54,8 +55,8 @@
 
   <main>
     <section class="intro md:mt-10">
-        <div class="container px-0">
-        <div class="md:max-w-full md:mx-auto md:my-0 md:grid md:grid-cols-2">
+        <div class="container px-0 lg:px-[72px]">
+        <div class="md:max-w-full md:mx-auto md:my-0 md:grid md:grid-cols-2 md:mb-20 mb-10">
             <div class="intro-card bg-white border border-black md:border-b-0 md:flex md:col-span-2">
                 <div class="intro-title hidden lg:block bg-black px-10 pt-6">
                     <p class="[writing-mode:vertical-lr] text-white text-xl"><span class="font-squada text-white text-3xl mb-4">Recommend</span>推 薦 系 列</p>
@@ -76,7 +77,7 @@
                     </div>
                 </div>
             </div>
-            <div class="intro-card bg-white border border-black md:flex md:flex-row-reverse sm:h-[340px]">
+            <div class="intro-card bg-white border border-black md:flex md:flex-row-reverse lg:h-[340px]">
                 <a href="#" class="sm:w-[49%]">
                     <img class="sm:h-full sm:w-full" src="./assets/images/week8-202207/art02.jpg" alt="" />
                 </a>
@@ -93,7 +94,7 @@
                     </div>
                 </div>
             </div>
-            <div class="intro-card bg-white border border-black md:border-l-0 border-b-2 md:border-b md:flex md:flex-row-reverse mb-10 sm:h-[340px]">
+            <div class="intro-card bg-white border border-black md:border-l-0 border-b-2 md:border-b md:flex md:flex-row-reverse mb-10 lg:h-[340px]">
                 <a href="#" class="sm:w-[49%]">
                     <img class="sm:w-full sm:h-full" src="./assets/images/week8-202207/art21.jpg" alt="" />
                 </a>
@@ -113,11 +114,198 @@
         </div>
     </div>
     </section>
+    <section class="ranking">
+        <div class="container md:px-0 lg:px-[72px]">
+            <div class="ranking-title-area border-b border-black flex items-center justify-between md:pb-4 cursor-pointer mb-6 md:mb-12 relative">
+                <h2 class="ranking-title font-squada text-[32px] leading-[34px] md:text-5xl flex items-end pb-2">Ranking<span class="hidden md:block text-xl ml-4 font-bold">市價排行榜</span></h2>
+                <div class="more-area flex justify-end items-center text-lg leading-[19px] md:absolute md:bottom-6 md:right-0 mb-[-8px] md:mb-[-24px]">
+                    <a href="#" class="more-btn relative before:absolute before:content-[''] before:border-8 before:border-main-orange before:border-t-transparent before:border-l-transparent hover:before:border-t-transparent hover:before:border-l-transparent before:bottom-0 before:right-0 font-squada py-2 px-12 text-lg leading-[19px] font-medium text-center">
+                        more
+                    </a>
+                </div>
+            </div>
+            <div class="ranking-content grid grid-rows-6 gap-y-4 lg:grid-rows-none lg:grid-cols-3 lg:gap-[25px]">
+                <div class="ranking-card cursor-pointer flex font-squada border border-black lg:relative lg:flex-col">
+                    <div class="ranking-number flex items-center justify-center font-number text-2xl leading-6 min-w-[38px] lg:absolute lg:top-0 lg:left-0 lg:w-16 lg:h-16 lg:bg-white lg:border-r lg:border-b lg:border-black">1</div>
+                    <div class="ranking-img min-w-[87px] h-[100px] lg:h-[374px] border-r border-l border-black lg:border-r-0 lg:border-l-0 lg:border-b">
+                        <a href="#1"><img class="w-full h-full object-cover object-top block" src="./assets/images/week8-202207/art04.jpg" alt="stroking-woman"></a>
+                        <a href="#" class="more-btn-in-card hidden lg:absolute lg:border-r-0 lg:bottom-[98px] lg:right-0 relative before:absolute before:content-[''] before:border-8 before:border-main-orange before:border-t-transparent before:border-l-transparent hover:before:border-black hover:before:border-t-transparent hover:before:border-l-transparent before:bottom-0 before:right-0 font-squada border border-black py-2 px-12 text-lg leading-[19px] font-medium text-center bg-white hover:text-white hover:bg-main-orange hover:border-black">
+                            more
+                        </a>
+                    </div>
+                    <div class="ranking-text w-full">
+                        <div class="ranking-card-title px-2 py-4 text-lg leading-[26px] h-[58px] border-b border-black">散步遇到的女人</div>
+                        <div class="ranking-card-name flex items-center justify-between w-full py-2 px-2">
+                            <div class="ranking-artist">Zoe Jiang</div>
+                            <div class="ranking-price"><i class="fa-brands fa-ethereum"></i>300</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ranking-card cursor-pointer flex font-squada border border-black lg:relative lg:flex-col">
+                    <div class="ranking-number flex items-center justify-center font-number text-2xl leading-6 min-w-[38px] lg:absolute lg:top-0 lg:left-0 lg:w-16 lg:h-16 lg:bg-white lg:border-r lg:border-b lg:border-black">2</div>
+                    <div class="ranking-img max-w-[87px] lg:max-w-full h-[100px] lg:h-[374px] border-r border-l border-black lg:border-r-0 lg:border-l-0 lg:border-b">
+                        <a href="#2"><img class="w-full h-full object-cover object-top block" src="./assets/images/week8-202207/art05.jpg" alt="stroking-woman"></a>
+                        <a href="#" class="more-btn-in-card hidden lg:absolute lg:border-r-0 lg:bottom-[98px] lg:right-0 relative before:absolute before:content-[''] before:border-8 before:border-main-orange before:border-t-transparent before:border-l-transparent hover:before:border-black hover:before:border-t-transparent hover:before:border-l-transparent before:bottom-0 before:right-0 font-squada border border-black py-2 px-12 text-lg leading-[19px] font-medium text-center bg-white hover:text-white hover:bg-main-orange hover:border-black">
+                            more
+                        </a>
+                    </div>
+                    <div class="ranking-text w-full">
+                        <div class="ranking-card-title px-2 py-4 text-lg leading-[26px] h-[58px] border-b border-black">爆炸頭的母親</div>
+                        <div class="ranking-card-name flex items-center justify-between w-full py-2 px-2">
+                            <div class="ranking-artist">Yui</div>
+                            <div class="ranking-price"><i class="fa-brands fa-ethereum"></i>300</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ranking-card cursor-pointer flex font-squada border border-black lg:relative lg:flex-col">
+                    <div class="ranking-number flex items-center justify-center font-number text-2xl leading-6 min-w-[38px] lg:absolute lg:top-0 lg:left-0 lg:w-16 lg:h-16 lg:bg-white lg:border-r lg:border-b lg:border-black">3</div>
+                    <div class="ranking-img min-w-[87px] h-[100px] lg:h-[374px] border-r border-l border-black lg:border-r-0 lg:border-l-0 lg:border-b">
+                        <a href="#3"><img class="w-full h-full object-cover object-top block" src="./assets/images/week8-202207/art06.jpg" alt="stroking-woman"></a>
+                        <a href="#" class="more-btn-in-card hidden lg:absolute lg:border-r-0 lg:bottom-[98px] lg:right-0 relative before:absolute before:content-[''] before:border-8 before:border-main-orange before:border-t-transparent before:border-l-transparent hover:before:border-black hover:before:border-t-transparent hover:before:border-l-transparent before:bottom-0 before:right-0 font-squada border border-black py-2 px-12 text-lg leading-[19px] font-medium text-center bg-white hover:text-white hover:bg-main-orange hover:border-black">
+                            more
+                        </a>
+                    </div>
+                    <div class="ranking-text w-full">
+                        <div class="ranking-card-title px-2 py-4 text-lg leading-[26px] h-[58px] border-b border-black">夏天的時候</div>
+                        <div class="ranking-card-name flex items-center justify-between w-full py-2 px-2">
+                            <div class="ranking-artist">Bug Lin</div>
+                            <div class="ranking-price"><i class="fa-brands fa-ethereum"></i>300</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ranking-card cursor-pointer flex font-squada border border-black">
+                    <div class="ranking-number flex items-center justify-center font-number text-2xl leading-6 min-w-[38px]">4</div>
+                    <div class="ranking-img min-w-[87px] h-[100px] border-r border-l border-black">
+                        <a href="#4"></a><img class="w-full h-full object-cover object-center block" src="./assets/images/week8-202207/art13.jpg" alt="stroking-woman"></a>
+                    </div>
+                    <div class="ranking-text w-full">
+                        <div class="ranking-card-title px-2 py-4 text-lg leading-[26px] h-[58px] border-b border-black">追求者送我的花</div>
+                        <div class="ranking-card-name flex items-center justify-between w-full py-2 px-2">
+                            <div class="ranking-artist">Micheal</div>
+                            <div class="ranking-price"><i class="fa-brands fa-ethereum"></i>300</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ranking-card cursor-pointer flex font-squada border border-black">
+                    <div class="ranking-number flex items-center justify-center font-number text-2xl leading-6 min-w-[38px]">5</div>
+                    <div class="ranking-img min-w-[87px] h-[100px] border-r border-l border-black">
+                        <a href="#5"></a><img class="w-full h-full object-cover object-center block" src="./assets/images/week8-202207/art07.jpg" alt="stroking-woman"></a>
+                    </div>
+                    <div class="ranking-text w-full">
+                        <div class="ranking-card-title px-2 py-4 text-lg leading-[26px] h-[58px] border-b border-black">今天釣到的魚</div>
+                        <div class="ranking-card-name flex items-center justify-between w-full py-2 px-2">
+                            <div class="ranking-artist">Wei JJ</div>
+                            <div class="ranking-price"><i class="fa-brands fa-ethereum"></i>300</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ranking-card cursor-pointer flex font-squada border border-black">
+                    <div class="ranking-number flex items-center justify-center font-number text-2xl leading-6 min-w-[38px]">6</div>
+                    <div class="ranking-img min-w-[87px] h-[100px] border-r border-l border-black">
+                        <a href="#6"></a><img class="w-full h-full object-cover object-center block" src="./assets/images/week8-202207/art08.jpg" alt="stroking-woman"></a>
+                    </div>
+                    <div class="ranking-text w-full">
+                        <div class="ranking-card-title px-2 py-4 text-lg leading-[26px] h-[58px] border-b border-black">人生中的貓咪們</div>
+                        <div class="ranking-card-name flex items-center justify-between w-full py-2 px-2">
+                            <div class="ranking-artist">Even Lai</div>
+                            <div class="ranking-price"><i class="fa-brands fa-ethereum"></i>300</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="artist mt-10 md:mt-20">
+        <div class="container md:px-0 lg:px-[72px]">
+            <div class="ranking-title-area border-b border-black flex items-center justify-between md:pb-4 cursor-pointer mb-6 md:mb-0 relative">
+                <h2 class="ranking-title font-squada text-[32px] leading-[34px] md:text-5xl flex items-end pb-2">Artist<span class="hidden md:block text-xl ml-4 font-bold">熱門藝術家</span></h2>
+                <div class="more-area flex justify-end items-center text-lg leading-[19px] md:absolute md:bottom-6 md:right-0 mb-[-8px] md:mb-[-24px]">
+                    <a href="#" class="more-btn relative before:absolute before:content-[''] before:border-8 before:border-main-orange before:border-t-transparent before:border-l-transparent hover:before:border-t-transparent hover:before:border-l-transparent before:bottom-0 before:right-0 font-squada py-2 px-12 text-lg leading-[19px] font-medium text-center">
+                        more
+                    </a>
+                </div>
+            </div>
+            <!-- swiper artist part -->
+            <!-- Slider main container -->
+            <div class="swiper mySwiper w-full mb-12 mt-12">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper lg:mb-12">
+                <!-- Slides -->
+                    <div class="swiper-slide flex flex-col items-center justify-center h-[344px] px-3 pb-6 lg:pb-0 lg:relative">
+                        <img src="./assets/images/week8-202207/artist01.jpg" class=" grayscale">
+                        <div class="slide-text mt-4 mb-6 p-6 md:w-[307px] h-24 bg-white lg:hidden lg:bottom-0 lg:left-8 lg:opacity-[0.85] ">
+                            <p class="opacity-100 text-left">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                        </div>
+                        <div class="slide-name hidden md:absolute top-6 left-8 md:top-6 md:left-8">
+                            <p class="font-squada lg:text-[80px] lg:leading-[85px] lg:w-[258px] text-white text-[32px] leading-[34px]">Antony Wu</p>
+                        </div>
+                        <div class="slide-name hidden bottom-44 right-8 md:bottom-44 lg:bottom-8 xl:bottom-7 xl:right-8">
+                            <a href="#" class="more-btn lg:border-r-0 relative before:absolute before:content-[''] before:border-8 before:border-main-orange before:border-t-transparent before:border-l-transparent hover:before:border-black hover:before:border-t-transparent hover:before:border-l-transparent before:bottom-0 before:right-0 font-squada border border-black py-2 px-12 text-lg leading-[19px] font-medium text-center bg-white hover:text-white hover:bg-main-orange hover:border-black">
+                                more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col items-center justify-center h-[344px] px-3 pb-6 lg:pb-0 lg:relative">
+                        <img src="./assets/images/week8-202207/artist02.jpg" class=" grayscale">
+                        <div class="slide-text mt-4 mb-6 p-6 md:w-[307px] h-24 bg-white lg:hidden lg:bottom-0 lg:left-8 lg:opacity-[0.85] ">
+                            <p class="opacity-100 text-left">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                        </div>
+                        <div class="slide-name hidden md:absolute top-6 left-8 md:top-6 md:left-8">
+                            <p class="font-squada lg:text-[80px] lg:leading-[85px] lg:w-[258px] text-white text-[32px] leading-[34px]">Antony Wu</p>
+                        </div>
+                        <div class="slide-name hidden bottom-44 right-8 md:bottom-44 lg:bottom-8 xl:bottom-7 xl:right-8">
+                            <a href="#" class="more-btn lg:border-r-0 relative before:absolute before:content-[''] before:border-8 before:border-main-orange before:border-t-transparent before:border-l-transparent hover:before:border-black hover:before:border-t-transparent hover:before:border-l-transparent before:bottom-0 before:right-0 font-squada border border-black py-2 px-12 text-lg leading-[19px] font-medium text-center bg-white hover:text-white hover:bg-main-orange hover:border-black">
+                                more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col items-center justify-center h-[344px] px-3 pb-6 lg:pb-0 lg:relative">
+                        <img src="./assets/images/week8-202207/artist04.jpg" class=" grayscale">
+                        <div class="slide-text mt-4 mb-6 p-6 md:w-[307px] h-24 bg-white lg:hidden lg:bottom-0 lg:left-8 lg:opacity-[0.85] ">
+                            <p class="opacity-100 text-left">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                        </div>
+                        <div class="slide-name hidden md:absolute top-6 left-8 md:top-6 md:left-8">
+                            <p class="font-squada lg:text-[80px] lg:leading-[85px] lg:w-[258px] text-white text-[32px] leading-[34px]">Antony Wu</p>
+                        </div>
+                        <div class="slide-name hidden bottom-44 right-8 md:bottom-44 lg:bottom-8 xl:bottom-7 xl:right-8">
+                            <a href="#" class="more-btn lg:border-r-0 relative before:absolute before:content-[''] before:border-8 before:border-main-orange before:border-t-transparent before:border-l-transparent hover:before:border-black hover:before:border-t-transparent hover:before:border-l-transparent before:bottom-0 before:right-0 font-squada border border-black py-2 px-12 text-lg leading-[19px] font-medium text-center bg-white hover:text-white hover:bg-main-orange hover:border-black">
+                                more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex flex-col items-center justify-center h-[344px] px-3 pb-6 lg:pb-0 lg:relative">
+                        <img src="./assets/images/week8-202207/artist05.jpg" class=" grayscale">
+                        <div class="slide-text mt-4 mb-6 p-6 md:w-[307px] h-24 bg-white lg:hidden lg:bottom-0 lg:left-8 lg:opacity-[0.85] ">
+                            <p class="opacity-100 text-left">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+                        </div>
+                        <div class="slide-name hidden md:absolute top-6 left-8 md:top-6 md:left-8">
+                            <p class="font-squada lg:text-[80px] lg:leading-[85px] lg:w-[258px] text-white text-[32px] leading-[34px]">Antony Wu</p>
+                        </div>
+                        <div class="slide-name hidden bottom-44 right-8 md:bottom-44 lg:bottom-8 xl:bottom-7 xl:right-8">
+                            <a href="#" class="more-btn lg:border-r-0 relative before:absolute before:content-[''] before:border-8 before:border-main-orange before:border-t-transparent before:border-l-transparent hover:before:border-black hover:before:border-t-transparent hover:before:border-l-transparent before:bottom-0 before:right-0 font-squada border border-black py-2 px-12 text-lg leading-[19px] font-medium text-center bg-white hover:text-white hover:bg-main-orange hover:border-black">
+                                more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+            
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+    </section>
 </main>
 
   <footer class="footer">
     footer
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
