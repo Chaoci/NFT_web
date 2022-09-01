@@ -4,7 +4,8 @@ module.exports = {
   content: ["./app/**/*.{html,ejs}"],
   theme: {
     fontFamily:{
-      'squada': ['Squada One', 'cursive','Noto Sans TC', 'sans-serif']
+      'squada': ['Squada One', 'cursive','Noto Sans TC', 'sans-serif'],
+      'number':['Paytone One', 'sans-serif']
     },
     container:{
       center:true,
@@ -23,6 +24,9 @@ module.exports = {
       '8': '8px',
     },
     extend: {
+      backgroundImage:{
+        'art-4':"url('/assets/images/week8-202207/art04.jpg')"
+      },
       colors:{
       'main-bg':'#F0F0F0',
       'main-orange':'#E6553B'

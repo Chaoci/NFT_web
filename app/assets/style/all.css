@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Squada+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Paytone+One&family=Squada+One&display=swap');
     html{
         font-family: -apple-system, BlinkMacSystemFont,'Squada One', cursive,'Noto Sans TC', sans-serif,"Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
     }
