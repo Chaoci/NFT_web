@@ -29,5 +29,27 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true
   }
+}); //masonry
+// var $grid = $('.grid1').imagesLoaded( function() {
+//   // init Masonry after all images have loaded
+//   $grid.masonry({
+//     itemSelector: '.grid-item',
+//   // use element for option
+//     columnWidth: '.grid-sizer',
+//     percentPosition: true,
+//     horizontalOrder: true,
+//     gutter:20,
+//   });
+// });
+
+var $grid = $('.grid1').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer',
+  gutter: 24
+}); // layout Masonry after each image loads
+
+$grid.imagesLoaded().progress(function () {
+  $grid.masonry();
 });
 //# sourceMappingURL=all.js.map
