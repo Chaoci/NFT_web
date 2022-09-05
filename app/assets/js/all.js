@@ -1,7 +1,3 @@
-const menu = document.querySelector('.header-mobile-menu');
-
-
-
 // swiper part
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
@@ -33,22 +29,22 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 //masonry
-
-// var $grid = $('.grid1').imagesLoaded( function() {
-//   // init Masonry after all images have loaded
-//   $grid.masonry({
-//     itemSelector: '.grid-item',
-//   // use element for option
-//     columnWidth: '.grid-sizer',
-//     percentPosition: true,
-//     horizontalOrder: true,
-//     gutter:20,
-//   });
-// });
 var $grid = $('.grid1').masonry({
   itemSelector: '.grid-item',
   percentPosition: true,
   columnWidth: '.grid-sizer',
+  gutter:24
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
+
+//masonry
+var $grid = $('.grid2').masonry({
+  itemSelector: '.grid1-item',
+  percentPosition: true,
+  columnWidth: '.grid1-sizer',
   gutter:24
 });
 // layout Masonry after each image loads
