@@ -86,3 +86,68 @@
   display: block;
   max-width: 100%;
 }
+
+.down, .state-down, .price-down, .bird-down, .flower-down, .bird-number-down, .bird-color-down, .left-btn {
+  display: none;
+}
+
+.table-white::before {
+  content: "";
+  width: 20px;
+  height: 50px;
+  background-color: #F0F0F0;
+  position: absolute;
+  right: -10px;
+  top: 20px;
+}
+
+.grid1-sizer,
+.grid1-item {
+  width: 31.6%;
+}
+@media (max-width: 1400px) {
+  .grid1-sizer,
+.grid1-item {
+    width: 31%;
+  }
+}
+@media (max-width: 1060px) {
+  .grid1-sizer,
+.grid1-item {
+    width: 48%;
+  }
+}
+@media (max-width: 600px) {
+  .grid1-sizer,
+.grid1-item {
+    width: 47.3%;
+  }
+}
+@media (max-width: 475px) {
+  .grid1-sizer,
+.grid1-item {
+    width: 46.4%;
+  }
+}
+
+.grid1-item {
+  float: left;
+  margin-bottom: 24px;
+}
+
+.grid1-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.grid1-item:hover img {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
+.grid1-item:hover .pic-info {
+  display: block;
+}
+
+.search-form {
+  display: none;
+}
